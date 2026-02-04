@@ -1,0 +1,105 @@
+pm uninstall -k --user 0 com.miui.videoplayer
+pm uninstall -k --user 0 com.miui.player
+pm uninstall -k --user 0 com.miui.compass
+pm uninstall -k --user 0 com.xiaomi.mipicks
+pm uninstall -k --user 0 com.xiaomi.midrop
+pm uninstall -k --user 0 com.miui.weather2
+pm uninstall -k --user 0 com.miui.calculator
+pm uninstall -k --user 0 com.miui.screenrecorder
+pm uninstall -k --user 0 com.android.browser
+pm uninstall -k --user 0 com.miui.fm
+pm uninstall -k --user 0 com.miui.touchassistant
+pm uninstall -k --user 0 com.miui.misound
+pm uninstall -k --user 0 com.miui.huanji
+pm uninstall -k --user 0 com.miui.voiceassist
+pm uninstall -k --user 0 com.miui.virtualsim
+pm uninstall -k --user 0 com.miui.yellowpage
+pm uninstall -k --user 0 com.android.email
+pm uninstall -k --user 0 com.android.calendar
+pm uninstall -k --user 0 com.android.hotwordenrollment.okgoogle
+pm uninstall -k --user 0 com.android.hotwordenrollment.google
+pm uninstall -k --user 0 com.google.android.youtube
+pm uninstall -k --user 0 com.google.android.apps.youtube.music
+pm uninstall -k --user 0 com.google.android.apps.photos
+pm uninstall -k --user 0 com.google.android.apps.tachyon
+pm uninstall -k --user 0 com.google.android.videos
+pm uninstall -k --user 0 com.google.android.music
+pm uninstall -k --user 0 com.android.chrome
+pm uninstall -k --user 0 com.google.android.apps.maps
+pm uninstall -k --user 0 com.google.android.gm
+pm uninstall -k --user 0 com.google.android.tts
+pm uninstall -k --user 0 com.google.android.apps.docs
+pm uninstall -k --user 0 com.google.android.apps.drive
+pm uninstall -k --user 0 com.google.android.apps.messaging
+pm uninstall -k --user 0 com.facebook.appmanager
+pm uninstall -k --user 0 com.facebook.services
+pm uninstall -k --user 0 com.facebook.system
+pm uninstall -k --user 0 com.facebook.katana
+pm uninstall -k --user 0 com.netflix.mediaclient
+pm uninstall -k --user 0 com.netflix.partner.activation
+pm uninstall -k --user 0 com.amazon.mShop.android.shopping
+pm uninstall -k --user 0 com.microsoft.office.excel
+pm uninstall -k --user 0 com.microsoft.office.word
+pm uninstall -k --user 0 com.microsoft.office.powerpoint
+pm uninstall -k --user 0 com.spotify.music
+pm uninstall -k --user 0 com.twitter.android
+pm uninstall -k --user 0 com.instagram.android
+pm uninstall -k --user 0 com.whatsapp
+pm uninstall -k --user 0 com.tencent.mm
+pm uninstall -k --user 0 com.alibaba.aliexpresshd
+pm uninstall -k --user 0 com.ebay.mobile
+settings put global miui_optimization 0
+settings put global window_animation_scale 0
+settings put global transition_animation_scale 0
+settings put global animator_duration_scale 0
+settings put global background_process_limit 1
+settings put global app_max_cached_processes 1
+settings put secure location_mode 0
+settings put global wifi_scan_always_enabled 0
+settings put global ble_scan_always_enabled 0
+settings put global mobile_data_always_on 0
+settings put global tether_dun_required 0
+settings put global captive_portal_mode 1
+settings put private global network_avoid_bad_wifi 1
+settings put global package_verifier_enable 0
+settings put global upload_log_pref 0
+settings put global send_action_app_error 0
+settings put global low_power 0
+settings put global low_power_sticky 0
+settings put global adaptive_battery_management_enabled 1
+settings put global app_standby_enabled 1
+settings put global bg_restriction_level 4
+settings put global app_restriction_enabled 1
+settings put global auto_sync 0
+settings put global device_idle_constants light_after_inactive_to=1000,light_pre_idle_to=3000,light_max_idle_to=43200000,light_idle_to=900000,light_idle_factor=4.0
+settings put global sync_max_retry_delay_in_seconds 43200
+settings put global game_driver_opt_in 3
+settings put global gpu_debug_layers 0
+settings put global thermal_limit 0.7
+settings put global thermal_control_enabled 1
+settings put system touch_sensitivity 2
+settings put system touch_responsiveness 2
+settings put global storage_benchmark 1
+settings put global fsync_enabled 0
+cmd uimode night yes
+settings put system notification_snooze_options 2,3,6
+settings put system show_notification_channel_warnings 0
+settings put system accelerometer_rotation 1
+settings put system sound_effects_enabled 0
+settings put system lockscreen_sounds_enabled 0
+settings put system charging_sounds_enabled 0
+settings put system haptic_feedback_enabled 0
+settings put global appops_auto_revoke_mode 1
+settings put global auto_revoke_unused_threshold 7776000000
+settings put global backup_auto_restore 0
+settings put secure backup_enabled 0
+settings put global adb_enabled 0
+settings put global development_settings_enabled 0
+settings put global bugreport_in_power_menu 0
+settings put global sys_free_storage_log_interval 300000
+settings put global storage_cache_percentage 1
+settings put global fstrim_mandatory_interval 1296000000
+settings put global sqlite_compatibility_wal_flags 1
+pm trim-caches 1024M
+am send-trim-memory 0 COMPLETE
+am kill-all
