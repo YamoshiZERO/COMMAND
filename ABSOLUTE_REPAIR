@@ -1,32 +1,34 @@
 #!/system/bin/sh
-# Restauración completa desde optimización absoluta
+# Restauración masiva desde optimización extrema
 
-echo "🔄 INICIANDO RESTAURACIÓN COMPLETA..."
+echo "==========================================="
+echo "🔄 RESTAURACIÓN MASIVA INICIADA..."
+echo "==========================================="
 
-# Restaurar todas las apps eliminadas
-apps_restore="
+# Restaurar apps críticas
+APPS_RESTORE="
 com.miui.videoplayer
 com.miui.calculator
 com.android.chrome
 com.google.android.youtube
 com.miui.notes
-com.xiaomi.gamecenter
 "
 
-for app in $apps_restore; do
+echo "Restaurando apps eliminadas..."
+for app in $APPS_RESTORE; do
     cmd package install-existing $app
-    echo "  ✅ Restaurado: $app"
+    echo "  ✅ $app"
 done
 
-# Restaurar configuraciones de sistema
+# Restaurar configuraciones
+echo "Restaurando configuraciones..."
 settings put global window_animation_scale 1.0
 settings put global transition_animation_scale 1.0
 settings put global animator_duration_scale 1.0
-settings put global background_process_limit 20
+settings put global background_process_limit 15
 settings put global miui_optimization 1
-settings put global wifi_scan_always_enabled 1
-settings put global adaptive_battery_management_enabled 0
+settings put global webview_multiprocess 0
 
 echo " "
-echo "✅ RESTAURACIÓN COMPLETADA"
+echo "✅ RESTAURACIÓN MASIVA COMPLETADA"
 echo "🔄 REINICIA EL DISPOSITIVO AHORA"
