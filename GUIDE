@@ -1,0 +1,68 @@
+# **📋 PASOS DE EJECUCIÓN - OPTIMIZACIÓN REDMI 9A**
+
+ COMANDO A USAR EN BREVENT: sh /sdcard/Download/ABSOLUTE.sh
+
+## **🔧 PREPARACIÓN (HACER ANTES)**
+1. Activar Depuración USB en el teléfono
+   - Ir a Ajustes > Acerca del teléfono
+   - Tocar "Número de compilación" 7 veces
+   - Volver atrás, entrar en Opciones de desarrollador
+   - Activar "Depuración USB"
+
+2. Instalar Brevent en la computadora
+   - Descargar Brevent de su página oficial
+   - Instalar en Windows, Mac o Linux
+   - Conectar el teléfono con cable USB
+   - Autorizar la conexión en el teléfono
+
+3. Preparar el script de optimización
+   - Copiar TODO el texto del script proporcionado
+   - Guardarlo en un archivo de texto (opcional)
+
+## **🚀 EJECUCIÓN DEL SCRIPT**
+4. Abrir Brevent en la computadora
+   - Asegurarse que el teléfono está conectado
+   - Brevent debería mostrar "Dispositivo conectado"
+
+5. Ir a la consola de Brevent
+   - En Brevent, ir a la pestaña "Console" o "Consola"
+   - Esta es donde se pegan los comandos
+
+6. Pegar el script completo
+   - Pegar TODO el script copiado en la consola
+   - Asegurarse de pegar completamente, sin cortes
+
+7. Ejecutar el script
+   - Presionar ENTER en la consola
+   - Esperar a que se ejecute completamente (2-5 minutos)
+   - Ver los mensajes de progreso en pantalla
+
+## **🔄 POST-EJECUCIÓN (CRÍTICO)**
+8. Reiniciar el dispositivo INMEDIATAMENTE
+   - Mantener presionado el botón POWER 5 segundos
+   - Seleccionar "Reiniciar" (NO "Apagar")
+   - El reinicio es OBLIGATORIO
+
+9. Esperar después del reinicio
+   - El primer arranque será más lento (10-15 minutos)
+   - NO tocar el teléfono durante este tiempo
+   - El sistema se está reoptimizando internamente
+
+10. Verificación después del reinicio
+    - Comprobar que "Temas MIUI" funciona
+    - Verificar que "Galería MIUI" funciona
+    - Probar navegadores (deberían cargar más rápido)
+
+## **⚠️ IMPORTANTE**
+- El script NO requiere root
+- Preserva Temas y Galería MIUI
+- Corrige bugs de navegadores
+- Aplica optimizaciones extremas
+- Si hay problemas, usar script de restauración
+
+## **✅ VERIFICACIÓN FINAL**
+- RAM libre debería ser 900MB+
+- Animaciones instantáneas
+- Navegadores rápidos
+- Batería dura más
+- Temas y Galería funcionando
